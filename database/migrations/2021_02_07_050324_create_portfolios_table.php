@@ -20,6 +20,10 @@ class CreatePortfoliosTable extends Migration
             $table->string('client')->nullable();
             $table->string('skill')->nullable();
             $table->text('description');
+            $table->string('project_link');
+            $table->string('facebook');
+            $table->string('twitter');
+            $table->string('linkedin');
             $table->timestamps();
         });
     }

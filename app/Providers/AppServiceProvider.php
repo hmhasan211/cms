@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Menu;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\View\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $menus = Menu::where('status',1)->get();
+        view()->share('menus',$menus);
+
     }
 }

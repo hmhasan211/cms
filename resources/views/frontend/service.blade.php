@@ -10,19 +10,14 @@
                         <h1 class="text-10">Our <strong>Services</strong></h1>
                         <span class="sub-title">We Are Here To Help You</span>
                     </div>
-                    <div class="col-md-12 align-self-center order-1">
-                        <ul class="breadcrumb breadcrumb-light d-block text-center">
-                            <li><a href="#">Home</a></li>
-                            <li class="active">Pages</li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
         </section>
 
       	<div class="container py-5">
-                
-          
+
+
 					<div class="row pb-4 mt-2">
                         @foreach ($services as $service)
 
@@ -37,11 +32,11 @@
 								</div>
 							</div>
 						</div>
-						
-                        @endforeach		
+
+                        @endforeach
 
 					</div>
-		</div>				
+		</div>
 
 				<section class="section section-primary border-top-0 mb-0">
 					<div class="container">
@@ -74,33 +69,7 @@
 					</div>
 				</section>
 
-               <div class="container-fluid">
-              
-              @foreach ($services as $service)
-                    
-					<div class="row align-items-center bg-color-grey">
-						<div class="col-lg-6 p-0">
-							<section class="parallax section section-parallax custom-parallax-bg-pos-left custom-sec-left h-100 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'horizontalPosition': '100%'}" data-image-src="img/generic/generic-corporate-3-1-full.jpg" style="min-height: 315px;">
-							</section>
-						</div>
-						<div class="col-lg-6 p-0">
-							<section class="section section-no-border h-100 m-0">
-								<div class="row m-0">
-									<div class="col-half-section col-half-section-left">
-										<div class="overflow-hidden">
-											<h4 class="mb-0 appear-animation" data-appear-animation="maskUp"><a href="#" class="text-4 font-weight-bold pt-2 d-block text-dark text-decoration-none pb-1">{{$service->title}}</a></h4>
-										</div>
-										<div class="overflow-hidden mb-2">
-											<p class="mb-0 lead text-4 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">{{$service->sub_title}}</p>
-										</div>
-										<p class="text-2 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">{{$service->description}}</p>
-									</div>
-								</div>
-							</section>
-						</div>
-					</div>
-                    @endforeach 
-				</div>
+
 
                 <div class="container">
 					<div class="row py-5 mt-5 mb-4">
@@ -132,7 +101,6 @@
 						</div>
 					</div>
 				</div>
-
-    </div>
+   			 </div>
 
 @endsection

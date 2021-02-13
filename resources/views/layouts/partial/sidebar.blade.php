@@ -15,6 +15,13 @@
                     <p>Dashboard</p>
                 </a>
             </li>
+            <li class="nav-item {{Request::is('admin/menu*') ? 'active':''}}  ">
+                <a class="nav-link" href="{{route('menu.index')}}">
+                    <i class="material-icons">library_books</i>
+                    <p>Main Menu</p>
+                </a>
+            </li>
+
             <li class="nav-item {{Request::is('admin/service*') ? 'active':''}} ">
                 <a class="nav-link" href="{{route('service.index')}}">
                     <i class="material-icons">slideshow</i>
@@ -22,22 +29,15 @@
                 </a>
             </li>
 
-            <li class="nav-item {{Request::is('admin/category*') ? 'active':''}}  ">
-                <a class="nav-link" href="">
+            <li class="nav-item {{Request::is('admin/team*') ? 'active':''}}  ">
+                <a class="nav-link" href="{{route('team.index')}}">
                     <i class="material-icons">content_paste</i>
                     <p>Team</p>
                 </a>
             </li>
 
-            <li class="nav-item {{Request::is('admin/item*') ? 'active':''}}  ">
-                <a class="nav-link" href="">
-                    <i class="material-icons">library_books</i>
-                    <p>Testimonial</p>
-                </a>
-            </li>
-
-            <li class="nav-item {{Request::is('admin/item*') ? 'active':''}}  ">
-                <a class="nav-link" href="">
+            <li class="nav-item {{Request::is('admin/portfolio*') ? 'active':''}}  ">
+                <a class="nav-link" href="{{ route('portfolio.index') }}">
                     <i class="material-icons">library_books</i>
                     <p>Portfolio</p>
                 </a>

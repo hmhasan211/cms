@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','slider')
+@section('title','Menu')
 
 @push('css')
 
@@ -23,26 +23,23 @@
                       <!-- End error messages -->
                     <div class="card">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title ">Add New Slider</h4>
+                            <h4 class="card-title ">Add New Main Menu</h4>
 
                         </div>
                         <div class="card-body">
-                            <form action="{{route('slider.store')}}" method="POST" enctype="multipart/form-data">
+                            <form action="{{route('menu.store')}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="col-md-8 offset-2">
                                     <div class="form-group">
-                                        <label class="bmd-label-floating">Title</label>
-                                        <input type="text" class="form-control" name="title">
+                                        <label class="bmd-label-floating">Name</label>
+                                        <input type="text" class="form-control" name="name">
                                     </div>
                                     <div class="form-group">
-                                        <label class="bmd-label-floating">Sub Title</label>
-                                        <input type="text" class="form-control" name="sub_title">
+                                        <label class="bmd-label-floating">Link</label>
+                                        <input type="text" class="form-control" name="link">
                                     </div>
-                                    <div class="">
-                                        <label class="bmd-label-floating">Image</label>
-                                        <input type="file" class="form-control" name="image">
-                                    </div>
-                                    <a class="btn btn-danger" href="{{route('slider.index')}}">Back</a>
+
+                                    <a class="btn btn-danger" href="{{route('menu.index')}}">Back</a>
                                     <button type="submit" class="btn btn-primary ">Save</button>
                                 </div>
 
