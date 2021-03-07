@@ -47,7 +47,6 @@ class MenuController extends Controller
         Menu::insert([
             'name'=> $request->name,
             'link'=> $request->link,
-
         ]);
         return redirect()->route('menu.index')->with('successMsg','Menu Added Suceesfully!!');
     }
